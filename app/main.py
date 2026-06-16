@@ -47,8 +47,10 @@ templates = Jinja2Templates(directory="app/templates")
 
 # Configure GECX details
 # (We default to user specified values but allow override via environment variables)
-GCP_PROJECT = os.getenv("GCP_PROJECT", "shawn-altostrat")
+GCP_PROJECT = os.getenv("GCP_PROJECT", "cfh-de-chatbot-lab")
 GCP_LOCATION = os.getenv("GCP_LOCATION", "us")
+#GECX_APP_ID = os.getenv("GECX_APP_ID", "edf026cc-7117-44b0-aee9-3880ddf4c8ec")
+#GECX_DEPLOYMENT_ID = os.getenv("GECX_DEPLOYMENT_ID", "e30868d4-8787-474c-aa0a-6c0ce89b49bf")
 GECX_APP_ID = os.getenv("GECX_APP_ID", "c806756f-9855-413b-b552-4d741b296572")
 GECX_DEPLOYMENT_ID = os.getenv("GECX_DEPLOYMENT_ID", "17348383-2b82-41b3-a257-badcaf3a4511")
 
